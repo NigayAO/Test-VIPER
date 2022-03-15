@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="437.68115942028987" y="109.82142857142857"/>
         </scene>
-        <!--Course View-->
+        <!--Course Details View Controller-->
         <scene sceneID="2Ca-Tl-Rmx">
             <objects>
-                <viewController id="7NQ-li-zbA" customClass="CourseView" customModule="Test_VIPER" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7NQ-li-zbA" customClass="CourseDetailsViewController" customModule="Test_VIPER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3j4-TM-cTJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,9 +69,6 @@
                                     <action selector="favoriteButtonPressed" destination="7NQ-li-zbA" eventType="touchUpInside" id="h79-8n-2EZ"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="W9e-s0-ANB">
-                                <rect key="frame" x="169" y="315" width="37" height="37"/>
-                            </activityIndicatorView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ts1-Cu-mV8">
                                 <rect key="frame" x="16" y="446" width="343" height="49"/>
                                 <subviews>
@@ -98,9 +95,7 @@
                             <constraint firstItem="wzk-1N-Y8e" firstAttribute="bottom" secondItem="ts1-Cu-mV8" secondAttribute="bottom" constant="172" id="J25-6Z-8OL"/>
                             <constraint firstItem="CcX-xx-zBg" firstAttribute="leading" secondItem="wzk-1N-Y8e" secondAttribute="leading" constant="16" id="PqT-VT-rE8"/>
                             <constraint firstItem="wzk-1N-Y8e" firstAttribute="trailing" secondItem="p3R-2v-icc" secondAttribute="trailing" constant="16" id="SBa-TV-qBj"/>
-                            <constraint firstItem="W9e-s0-ANB" firstAttribute="centerY" secondItem="3j4-TM-cTJ" secondAttribute="centerY" id="T61-ul-YZD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gDz-FO-NIu" secondAttribute="trailing" constant="0.5" id="UA3-DK-bLU"/>
-                            <constraint firstItem="W9e-s0-ANB" firstAttribute="centerX" secondItem="3j4-TM-cTJ" secondAttribute="centerX" id="aQZ-y5-5Tg"/>
                             <constraint firstItem="wzk-1N-Y8e" firstAttribute="trailing" secondItem="ts1-Cu-mV8" secondAttribute="trailing" constant="16" id="d9a-uL-7bt"/>
                             <constraint firstItem="ts1-Cu-mV8" firstAttribute="top" secondItem="p3R-2v-icc" secondAttribute="bottom" constant="23" id="fJA-Wg-GSj"/>
                             <constraint firstItem="ts1-Cu-mV8" firstAttribute="leading" secondItem="wzk-1N-Y8e" secondAttribute="leading" constant="16" id="ker-Ey-Apz"/>
@@ -112,7 +107,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="gAf-zn-9hj"/>
                     <connections>
-                        <outlet property="activityIndicator" destination="W9e-s0-ANB" id="nNv-zu-jrW"/>
                         <outlet property="favoriteButton" destination="gDz-FO-NIu" id="5Yr-8v-GdX"/>
                         <outlet property="imageLabel" destination="p3R-2v-icc" id="JT9-7J-7OD"/>
                         <outlet property="numberOfLessons" destination="VJy-tB-ofg" id="PhN-KW-yKe"/>
