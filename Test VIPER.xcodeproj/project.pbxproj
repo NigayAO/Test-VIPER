@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		1D8E4B8A27DF50B00003D66C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8E4B8927DF50B00003D66C /* AppDelegate.swift */; };
 		1D8E4B8C27DF50B00003D66C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8E4B8B27DF50B00003D66C /* SceneDelegate.swift */; };
-		1D8E4B8E27DF50B00003D66C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8E4B8D27DF50B00003D66C /* ViewController.swift */; };
+		1D8E4B8E27DF50B00003D66C /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8E4B8D27DF50B00003D66C /* CourseView.swift */; };
 		1D8E4B9127DF50B00003D66C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8E4B8F27DF50B00003D66C /* Main.storyboard */; };
 		1D8E4B9327DF50B10003D66C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D8E4B9227DF50B10003D66C /* Assets.xcassets */; };
 		1D8E4B9627DF50B10003D66C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8E4B9427DF50B10003D66C /* LaunchScreen.storyboard */; };
+		1D8E4B9E27DF51150003D66C /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8E4B9D27DF51150003D66C /* CourseList.swift */; };
+		1D8E4BA027DF517A0003D66C /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8E4B9F27DF517A0003D66C /* CourseCell.swift */; };
+		1D8E4BA227DF52B40003D66C /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8E4BA127DF52B40003D66C /* Course.swift */; };
+		1D8E4BA627DF531E0003D66C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8E4BA527DF531E0003D66C /* NetworkManager.swift */; };
+		1D8E4BA827DF53250003D66C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8E4BA727DF53250003D66C /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D8E4B8627DF50B00003D66C /* Test VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8E4B8927DF50B00003D66C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D8E4B8B27DF50B00003D66C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1D8E4B8D27DF50B00003D66C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1D8E4B8D27DF50B00003D66C /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 		1D8E4B9027DF50B00003D66C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D8E4B9227DF50B10003D66C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D8E4B9527DF50B10003D66C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D8E4B9727DF50B10003D66C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D8E4B9D27DF51150003D66C /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
+		1D8E4B9F27DF517A0003D66C /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		1D8E4BA127DF52B40003D66C /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		1D8E4BA527DF531E0003D66C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1D8E4BA727DF53250003D66C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +68,42 @@
 			children = (
 				1D8E4B8927DF50B00003D66C /* AppDelegate.swift */,
 				1D8E4B8B27DF50B00003D66C /* SceneDelegate.swift */,
-				1D8E4B8D27DF50B00003D66C /* ViewController.swift */,
-				1D8E4B8F27DF50B00003D66C /* Main.storyboard */,
+				1D8E4BA327DF52F40003D66C /* Models */,
+				1D8E4BA927DF53290003D66C /* Services */,
+				1D8E4B9D27DF51150003D66C /* CourseList.swift */,
+				1D8E4B8D27DF50B00003D66C /* CourseView.swift */,
+				1D8E4B9F27DF517A0003D66C /* CourseCell.swift */,
+				1D8E4BA427DF52FC0003D66C /* Storyboards */,
 				1D8E4B9227DF50B10003D66C /* Assets.xcassets */,
-				1D8E4B9427DF50B10003D66C /* LaunchScreen.storyboard */,
 				1D8E4B9727DF50B10003D66C /* Info.plist */,
 			);
 			path = "Test VIPER";
+			sourceTree = "<group>";
+		};
+		1D8E4BA327DF52F40003D66C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1D8E4BA127DF52B40003D66C /* Course.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1D8E4BA427DF52FC0003D66C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1D8E4B8F27DF50B00003D66C /* Main.storyboard */,
+				1D8E4B9427DF50B10003D66C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1D8E4BA927DF53290003D66C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1D8E4BA527DF531E0003D66C /* NetworkManager.swift */,
+				1D8E4BA727DF53250003D66C /* DataManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D8E4B8E27DF50B00003D66C /* ViewController.swift in Sources */,
+				1D8E4BA227DF52B40003D66C /* Course.swift in Sources */,
+				1D8E4BA827DF53250003D66C /* DataManager.swift in Sources */,
+				1D8E4B9E27DF51150003D66C /* CourseList.swift in Sources */,
+				1D8E4B8E27DF50B00003D66C /* CourseView.swift in Sources */,
+				1D8E4BA627DF531E0003D66C /* NetworkManager.swift in Sources */,
 				1D8E4B8A27DF50B00003D66C /* AppDelegate.swift in Sources */,
 				1D8E4B8C27DF50B00003D66C /* SceneDelegate.swift in Sources */,
+				1D8E4BA027DF517A0003D66C /* CourseCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
